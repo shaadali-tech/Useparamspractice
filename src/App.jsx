@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Passed from "./Passed";
 
 const products = [
   {
@@ -58,6 +59,8 @@ const App = () => {
           <p>{product.price}</p>
         </div>
       ))}
+
+      <Passed />
     </div>
   );
 };
