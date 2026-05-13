@@ -38,14 +38,12 @@ const Profile = () => {
   ];
 
   function UserProfile() {
-    users.map((user) => {
-      return (
-        <div key={user.id}>
-          <h3>{user.name}</h3>
-          <Link to={`/profile/${user.id}`}>View Details</Link>
-        </div>
-      );
-    });
+    return users.map((user) => (
+      <div key={user.id}>
+        <h3>{user.name}</h3>
+        <Link to={`/profile/${user.id}`}>View Details</Link>
+      </div>
+    ));
   }
 
   function UserDetails() {
