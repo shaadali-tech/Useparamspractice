@@ -18,6 +18,9 @@ const Passed = () => {
     if (selectedStudentId === "failed") {
       return student.marks < 40;
     }
+    if (selectedStudentId === "greater than 80") {
+      return student.marks > 80;
+    }
     return true;
   });
 
@@ -30,6 +33,7 @@ const Passed = () => {
       >
         <option value="passed">Passed</option>
         <option value="failed">Failed</option>
+        <option value="greater than 80">Greater than 80</option>
         <option value="all">All</option>
       </select>
 
